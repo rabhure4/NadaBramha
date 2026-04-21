@@ -38,14 +38,14 @@ No cloud lock-in. No subscriptions. Just your voice stack, your way.
 
 </div>
 
-> **Add your screenshots** to the [`screenshots/`](./screenshots) folder with the names above.  
-> **Add demo videos** to the [`demo/`](./demo) folder — they'll be linked from this README automatically.
+> Screenshots**.  
+
 
 ### Demo
 
 https://github.com/user-attachments/assets/demo-placeholder
 
-> Replace the link above with your actual uploaded video URL from GitHub.
+
 
 ---
 
