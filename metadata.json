@@ -1,0 +1,8 @@
+{
+  "name": "NadaBramha",
+  "description": "A local-first multimodal audio workspace for TTS, notebook analysis, diarization, and exports.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

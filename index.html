@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" id="favicon" type="image/png" href="/logo/noun-sound-7524914.png" />
+    <title>NadaBramha</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function() {
+        var img = new Image();
+        img.onload = function() {
+          var s = 64;
+          var c = document.createElement('canvas');
+          c.width = s; c.height = s;
+          var ctx = c.getContext('2d');
+          // Draw gradient
+          var g = ctx.createLinearGradient(0, 0, s, 0);
+          g.addColorStop(0, '#6d9fff');
+          g.addColorStop(0.5, '#ff9eb7');
+          g.addColorStop(1, '#ffcf8a');
+          ctx.fillStyle = g;
+          ctx.fillRect(0, 0, s, s);
+          // Mask with logo
+          ctx.globalCompositeOperation = 'destination-in';
+          ctx.drawImage(img, 0, 0, s, s);
+          // Set as favicon
+          var link = document.getElementById('favicon');
+          link.href = c.toDataURL('image/png');
+        };
+        img.src = '/logo/noun-sound-7524914.png';
+      })();
+    </script>
+  </body>
+</html>
